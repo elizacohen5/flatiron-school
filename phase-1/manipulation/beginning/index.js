@@ -82,9 +82,17 @@ console.log(displayList('Scary Books', ['The Shining', 'Dracula']))
 
 // 2. Replace the <strong> element with a newly created one.
 
+// remove strong element 
+document.querySelector("strong").remove()
 
-// document.querySelector("address").textContent = `by ${strongTag}`;
+//create strong element
+const newStrong = document.createElement("strong")
 
+//add text content to newStrong
+
+
+// add a new strong element
+document.querySelector("address").append()
 
  // remove and add 
 
