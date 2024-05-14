@@ -12,11 +12,29 @@ Core Deliverables
 4. Render our array of items as a list of <Item> components.
 
 */
+import Item from "./item";
 
 function App() {
+  const items = [
+    {
+      id: 0,
+      name: "Dragon Bubble Tea",
+      price: 5
+    },
+    {
+      id: 1,
+      name: "Cookies",
+      price: "3"
+    }
+  ];
   return (
     <div>
       <h1>Sakib's Boba Shop</h1>
+      <ul>
+        {items.map((item) => {
+          return <Item name={item.name} price={item.price} key={item.id} />
+        })}
+      </ul>
     </div>
   )
 }
